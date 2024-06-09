@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/e9d2580056.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="src/css/styles.css">
+
+
+    <title>SimpleBank</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <i class="fa-solid fa-building-columns">SimpleBank</i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home" class="links">Conta Digital</a></li>
+                <li><a href="" class="links">Investimentos</a></li>
+                <li><a href="" class="links">Vantagens</a></li>
+                <li><a href="" class="links">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-logo">SimpleBank</div>
+                    <div class="card-number">2352 5678 9012 3456</div>
+                    <div class="card-info">
+                        <div class="card-holder">
+                            <span>Nome do Titular</span>
+                            <strong>João Silva Costa</strong>
+                        </div>
+                        <div class="card-expiry">
+                            <span>Validade</span>
+                            <strong>12/28</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="saldo-container">
+                <h3>Saldo</h3>
+                <h1><span>R$ </span>2347,89</h1>
+                
+                <button class="btn-default">
+                    <i class="fa-brands fa-pix"></i>
+                    <h4>PIX</h4>
+                </button>
+
+                <button class="btn-default">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <h4>EXTRATO</h4>
+                </button>
+
+                <button class="btn-default">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4>INVESTIR</h4>
+                </button>
+
+            </div>
+
+            <div class="perfil-container">
+                <div class="perfil-img">
+                    <img src="src/images/avatar.jpg" alt="image" width="200px">
+                </div>
+
+                <div class="perfil-info">
+                    <h1>Luana</h1>
+                    <h3>Oliveira Costa</h3>
+                </div>
+
+                <div class="perfil-config">
+                    <h1>Configurações</h1>
+                    <h1>Informações</h1>
+                    <h1>Benefícios</h1>
+                    <h1><span><i class="fa-solid fa-right-from-bracket"></i>Logout</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="investments" id="investments">
+            <div class="section-title-1">
+                <h1>Investimentos</h1>
+            </div>
+        
+            
+            <div class="chart-container">
+                <canvas id="meuGrafico"></canvas>
+            </div>
+
+            <div class="coins-container">
+                <h1>Dólar Comercial</h1>
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h3>R$ 5,33</h3>
+            </div>
+
+            <div class="coins-container">
+                <h1>Dólar Turismo</h1>
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h3>R$ 5,50</h3>
+            </div>
+
+            <script src="src/javascript/script.js"></script>
+            
+            
+        </section>
+    </main>
+</body>
+</html>
